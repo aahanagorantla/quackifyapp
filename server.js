@@ -43,3 +43,14 @@ wss.on('connection', (socket) => {
         console.log('Client disconnected');
     });
 });
+
+app.get('/firebase-config', (req, res) => {
+    res.json({
+        apiKey: process.env.FIREBASE_API_KEY,
+        authDomain: "quackify-23ed1.firebaseapp.com",
+        projectId: "quackify-23ed1",
+        storageBucket: "quackify-23ed1.firebasestorage.app",
+        messagingSenderId: "252770960913",
+        appId: "1:252770960913:web:11cb8e2608296288af53b0"
+    });
+});
