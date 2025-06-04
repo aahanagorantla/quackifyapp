@@ -11,7 +11,7 @@ const db = getFirestore(app);
 const email = localStorage.getItem("userEmail");
 const docRef = doc(db, "users", email);
 
-console.log("Firebase initialized with config:", user);
+console.log("Firebase initialized with config:", email);
 
 
 const necklaces = ["duckfits/IMG_0900.PNG", "duckfits/IMG_0918.PNG", "duckfits/IMG_0919.PNG", "duckfits/IMG_0920.PNG"];
