@@ -7,25 +7,12 @@ import { doc, getDoc, setDoc, updateDoc, getFirestore } from "https://www.gstati
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-async function doneonclick()
-{
-    console.log("Done button clicked");
-    try 
-    {
-        console.log("Saving indices to Firestore:", { nI, hI, siI, soI });
-        await updateDoc(docRef, {"avatar": {hatIndex: hI,necklaceIndex: nI,shirtIndex: siI,shoesIndex: soI,},
-    });
-    } 
-    catch (e) 
-    {
-        console.error("Error saving avatar:", e);
-    }
-    window.location.href = "profile.html";
-}
-
 
 const email = localStorage.getItem("userEmail");
 const docRef = doc(db, "users", email);
+
+console.log("Firebase initialized with config:", user);
+
 
 const necklaces = ["duckfits/IMG_0900.PNG", "duckfits/IMG_0918.PNG", "duckfits/IMG_0919.PNG", "duckfits/IMG_0920.PNG"];
 const hats = ["duckfits/IMG_0900.PNG", "duckfits/IMG_0910.PNG", "duckfits/IMG_0911.PNG", "duckfits/IMG_0912.PNG", "duckfits/IMG_0913.PNG", "duckfits/IMG_0914.PNG", "duckfits/IMG_0915.PNG", "duckfits/IMG_0916.PNG", "duckfits/IMG_0917.PNG"];
@@ -187,3 +174,18 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 });
 
+async function doneonclick()
+{
+    console.log("Done button clicked");
+    try 
+    {
+        console.log("Saving indices to Firestore:", { nI, hI, siI, soI });
+        await updateDoc(docRef, {"avatar": {hatIndex: hI,necklaceIndex: nI,shirtIndex: siI,shoesIndex: soI,},
+    });
+    } 
+    catch (e) 
+    {
+        console.error("Error saving avatar:", e);
+    }
+    window.location.href = "profile.html";
+}
