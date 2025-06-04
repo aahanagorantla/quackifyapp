@@ -47,10 +47,10 @@ wss.on('connection', (socket) => {
 app.get('/firebase-config', (req, res) => {
     res.json({
         apiKey: process.env.FIREBASE_API_KEY,
-        authDomain: "quackify-23ed1.firebaseapp.com",
-        projectId: "quackify-23ed1",
-        storageBucket: "quackify-23ed1.firebasestorage.app",
-        messagingSenderId: "252770960913",
-        appId: "1:252770960913:web:11cb8e2608296288af53b0"
+        authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+        projectId: process.env.FIREBASE_PROJECT_ID,
+        storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+        messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+        appId: process.env.FIREBASE_APP_ID
     });
 });
