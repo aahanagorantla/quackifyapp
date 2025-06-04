@@ -1,0 +1,62 @@
+.entry {
+  margin-bottom: 20px;
+}
+
+#journalList
+{
+  background-color:khaki;
+  color:darkolivegreen;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 10px;
+  padding: 20px;
+  width:fit-content
+}
+
+#entryDate {
+  margin-bottom: 8px;
+  padding: 6px;
+  font-size: 14px;
+}
+
+textarea {
+  display: block;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color:darkslategray;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#backtoprofile {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 16px;
+  background-color: #ffe497;
+  font-family: 'SourceCodePro', monospace;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 4px 7px #eec450;
+  color: #338095;
+}
+
+#backtoprofile:active {
+    box-shadow: 2px 4px #eec450;
+    transform: translateY(2px);
+}

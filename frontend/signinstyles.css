@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'FunkieRetro';
+    src: url('fonts/Funkie Retro.otf') format('opentype');
+}
+@font-face {
+    font-family: 'SourceCodePro';
+    src: url('fonts/SourceCodePro-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e7faff;
+    margin: 0;
+    padding: 0;
+    background-image: url("res/signupbg.gif");
+    background-size: cover;
+    background-position: center;
+    font-family: 'SourceCodePro', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: #c3e8f2;
+    color: black;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+}
+
+.box h1 {
+    font-family: 'FunkieRetro', cursive;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 2px 2px 5px #338095;
+    text-align: center;
+    transform: translateY(-10px);
+}
+
+.submitbtn {
+    background-color: #ffe497;
+    border: none;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-family: 'SourceCodePro', sans-serif;
+    box-shadow: 4px 6px #eec450;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.submitbtn:active {
+    box-shadow: 2px 4px #eec450;
+    transform: translateY(2px);
+}
+
+.question {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.question label {
+    font-weight: bold;
+    color: #06425c;
+    font-family: 'SourceCodePro', sans-serif;
+    flex: 0 0 100px;
+    margin-bottom: 0.5rem;
+    transform: translateY(6px);
+}
+
+.question input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #93cdda;
+    border-radius: 10px;
+    background-color: #ffffffcc;
+    font-family: 'SourceCodePro', monospace;
+    font-size: 1rem;
+    min-width: 0;
+}
+
+.signupq {
+    font-family: 'SourceCodePro', sans-serif;
+    font-size: 0.9rem;
+    color: #06425c;
+    text-align: center;
+    margin-top: 1.25rem;
+}

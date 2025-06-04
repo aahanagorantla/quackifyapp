@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>My Profile</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/x-icon" href="res/logo.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='profile.css'>
+</head>
+<body>
+
+    <div id="bannerimage">
+        <div class="duckbio">
+            <div id="duckimg">
+                <img id="base" src="duckfits/IMG_0901.PNG">
+                <img id="shirt">
+                <img id="hat">
+                <img id="shoes">
+                <img id="necklace">
+            </div>
+            <div id="bioBubble">
+                <p id="bioText"></p>
+            </div>
+        </div>
+
+        <div id = "profiletext">
+            <div id="name"></div>
+            <div id = "username"></div>
+            <div id = "pronouns"></div>
+        </div>
+
+    </div>
+
+    <div id="date">
+        <center>
+            <p id="datetext" class="date">Today's Date: </p>
+        </center>
+    </div>
+
+    <div id = "content">
+        <div id = "todolist">
+            <center>
+                <input type = "text" id = "todolistinput" placeholder="Add an item!">
+                <button id = "additembtn" class = "additembtn">Add</button>
+            </center>
+            <ul id = "todolistitems" class = "todolistitems"></ul>
+        </div>
+
+        <div id = "middle">
+            <div id = "moodbar">
+                <h2>Select your mood: </h2>
+                <input type="range" min="1" max="5" value="3" class="slider" id="moodSlider">
+                <div id = "duckMood">
+                    <img src = "duckmoods/neutral.png" alt="mood duck" width="100" id="moodDuck">
+                </div>
+            </div>
+
+            <center>
+                <div id = "habits">
+                    <div id = "habitContainer">
+                        <h1>Habit Tracker</h1>
+                        <p>Streak: <span id="streak">0</span> 🐠</p>
+
+                            <div id = "habits">
+                                <form id="habitList">
+
+                                </form>
+                            </div>
+
+                        <input type="text" id="newHabitInput">
+                        <button type="button" id="addHabit" onclick="addNewHabit()">Add Habit</button>
+                    </div>
+                </div>
+            </center>
+        </div>
+            
+        <div id = journal>
+            <a href="journal.html">
+                <img src="res/duckjournal.jpg" width="400">
+            </a>
+        </div>
+    </div>
+
+    <div class="circle-container">
+        <div class="circle" id="ponds" role="button">🌐</div>
+        <div class="circle" id="chat" role="button">💬</div>
+    </div>
+
+    <script type = "module" src='profile.js'></script>
+</body>
+</html>

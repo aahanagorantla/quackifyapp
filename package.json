@@ -1,0 +1,22 @@
+{
+  "name": "capstoneproject",
+  "version": "1.0.0",
+  "description": "This is a mental health productivity social media app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aahana AND Nandhikha",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "firebase": "^11.7.1",
+    "firebase-admin": "^13.4.0",
+    "git": "^0.1.5",
+    "node-fetch": "^2.7.0",
+    "openai": "^5.0.1",
+    "socket.io": "^4.8.1",
+    "ws": "^8.18.2"
+  }
+}

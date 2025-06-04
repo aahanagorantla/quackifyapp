@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'FunkieRetro';
+    src: url('fonts/Funkie Retro.otf') format('opentype');
+}
+@font-face {
+    font-family: 'SourceCodePro';
+    src: url('fonts/SourceCodePro-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e7faff;
+    margin: 0;
+    padding: 0;
+    background-image: url("res/signupbg.gif");
+    background-size: cover;
+    background-position: center;
+    font-family: 'SourceCodePro', sans-serif;
+}
+
+.box {
+    background-color: #c3e8f2;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em 3em;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+}
+
+.box h1 {
+    font-family: 'FunkieRetro', cursive;
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+    color: white;
+    text-shadow: 2px 2px 5px #338095;
+    text-align: center;
+    transform: translateY(-20px);
+}
+
+.submitbtn {
+    background-color: #ffe497;
+    border: none;
+    font-size: 1em;
+    padding: 0.75em 1.5em;
+    border-radius: 12px;
+    font-family: 'SourceCodePro', sans-serif;
+    box-shadow: 4px 6px #eec450;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 1em 0;
+    width: 100%;
+}
+
+.submitbtn:active {
+    box-shadow: 2px 4px #eec450;
+    transform: translateY(2px);
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+    gap: 0.5em;
+    flex-wrap: wrap;
+}
+
+.question label {
+    font-weight: bold;
+    color: #06425c;
+    font-family: 'SourceCodePro', sans-serif;
+    flex: 0 0 100px;
+    margin-right: 10px;
+    transform: translateY(6px);
+}
+
+.question input {
+    flex: 1;
+    padding: 0.6em;
+    border: 1px solid #93cdda;
+    border-radius: 10px;
+    background-color: #ffffffcc;
+    font-family: 'SourceCodePro', monospace;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signinq {
+    font-family: 'SourceCodePro', sans-serif;
+    font-size: 0.9em;
+    color: #06425c;
+    text-align: center;
+    margin-top: 1.5em;
+}

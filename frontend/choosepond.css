@@ -1,0 +1,174 @@
+@font-face{
+    font-family: 'FunkieRetro';
+    src: url('fonts/Funkie Retro.otf') format('opentype');
+}
+@font-face {
+    font-family: 'SourceCodePro';
+    src: url('fonts/SourceCodePro-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+    background-color: #e7faff;
+    margin: 0;
+    padding: 0;
+    background-image: url("res/grassbg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.pond{
+    height: 258px;
+    width: 401px;
+    background-image: url("res/pond.png");
+    background-size: cover;
+    background-position: center;
+    flex: 0 0 auto;
+    margin-top: 0;
+    transition: margin 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ponds{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.btn {
+    background-color: #ffe497;
+    border: none;
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-family: 'SourceCodePro', sans-serif;
+    box-shadow: 4px 6px #eec450;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 37px;
+    transform: translateY(-35px);
+}
+
+.btn:active {
+    box-shadow: 2px 4px #eec450;
+    transform: translateY(-33px);
+}
+
+div::-webkit-scrollbar {
+  display: none;
+}
+
+.pond:nth-child(even) {
+    margin-top: 250px;
+}
+
+.pond:nth-child(odd) {
+    margin-top: 0px;
+}
+
+#title{
+    font-family: 'FunkieRetro', sans-serif;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 5px #338095;
+}
+
+.bot{
+    justify-content: space-between;
+}
+
+.botbtn{
+    background-color: #ffe497;
+    border: none;
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-family: 'SourceCodePro', sans-serif;
+    box-shadow: 4px 6px #eec450;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.botbtn:active {
+    box-shadow: 2px 4px #eec450;
+    transform: translateY(  2px);
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e7faff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+    font-family: 'SourceCodePro', sans-serif;
+}
+
+#pondcode {
+    font-weight: bold;
+    color: #338095;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.jcbtn {
+    background-color: #ffe497;
+    border: none;
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-family: 'SourceCodePro', sans-serif;
+    box-shadow: 4px 6px #eec450;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.jcbtn:active {
+    box-shadow: 2px 4px #eec450;
+    transform: translateY(2px);
+}
+
+#pondName {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #eec450;
+    border-radius: 8px;
+    font-family: 'SourceCodePro', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#pondName:focus {
+    outline: none;
+    border: 2px solid #eec450;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    display: none;
+}
+
+#joinpondcode {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #eec450;
+    border-radius: 8px;
+    font-family: 'SourceCodePro', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Choose Pond</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/x-icon" href="res/logo.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='choosepond.css'>
+</head>
+<body>
+    <center>
+        <h1 id = "title">Travel to a pond to connect with friends!</h1>
+    </center>
+    <div class = "ponds"></div>
+    <div class = "bot"> 
+        <center>
+            <button id = "createpond" class = "botbtn">create pond</button>
+            <button id = "joinpond" class = "botbtn">join pond</button>
+            <button id = "backtoprofile" class = "botbtn">back to profile</button>
+        </center>
+    </div>
+
+    <div id="overlay"></div>
+
+    <div class = "popup" id = "createpopup">
+        <p>Pond Name: </p>
+        <input type="text" id="pondName" placeholder="Enter pond name">
+        <p id = "pondcode">Pond Code: </p>
+        <p>Remember the code to let others join it!</p>
+        <button class = "jcbtn" id="createBtn">Create</button>
+    </div>
+
+    <div class = "popup" id = "joinpopup">
+        <p>Pond Code: </p>
+        <input type="text" id="joinpondcode" placeholder="Enter pond code">
+        <button class = "jcbtn" id="joinbtn">Join</button>
+    </div>
+
+
+    <script type = "module" src='choosepond.js'></script>
+</body>
+</html>

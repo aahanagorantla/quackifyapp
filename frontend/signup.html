@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Quackify - Sign Up</title>
+    <link rel="icon" type="image/x-icon" href="res/logo.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='signupstyles.css'>
+</head>
+<body>
+    <div class = "box"> 
+        <h1>Quackify</h1>
+        <form id = "signupform">
+            <div class = "question">
+                <label for="email">Email:</label>
+                <input required id = "email" type = "email" placeholder="Email">
+            </div> 
+            <div class = "question">
+                <label for="password">Password:</label>
+                <input required id = "password" type = "password" placeholder="Password">    
+            </div>
+            <center>
+                <button type="submit" id="signin" class="submitbtn">Sign Up</button>
+                <p class = "signinq">Already have an account? <a href="signin.html">Sign In</a></p>
+            </center>
+        </form>
+    </div>
+    <script type = "module" src="signup.js"></script>
+</body>
+</html>

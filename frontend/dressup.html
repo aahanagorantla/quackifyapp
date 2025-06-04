@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Quackify - Dressup</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/x-icon" href="res/logo.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='dressup.css'>
+</head>
+<body>
+
+    <div class="centerWrapper">
+        <div class="customizationBox">
+            <div class="prevButtons">
+                <button style="background-color:darkseagreen;" onclick="prevHat()">◀</button>
+                <button style="background-color: darkseagreen;" onclick="prevNecklace()">◀</button>
+                <button style="background-color: darkseagreen;" onclick="prevShirt()">◀</button>
+                <button style="background-color: darkseagreen;" onclick="prevShoes()">◀</button>
+            </div> 
+
+            <div id="duckAvatar">
+                <img id="base" src="duckfits/IMG_0901.PNG">
+                <img id="shirt" src="duckfits/IMG_0900.PNG">
+                <img id="hat" src="duckfits/IMG_0900.PNG">
+                <img id="shoes" src="duckfits/IMG_0900.PNG">
+                <img id="necklace" src="duckfits/IMG_0900.PNG">
+            </div>
+
+            <div class="nextButtons">
+                <button style="background-color: darkseagreen;" onclick="nextHat()">▶</button>
+                <button style="background-color: darkseagreen;" onclick="nextNecklace()">▶</button>
+                <button style="background-color: darkseagreen;" onclick="nextShirt()">▶</button>
+                <button style="background-color: darkseagreen;" onclick="nextShoes()">▶</button>
+            </div>   
+        </div>
+
+        <div class="buttonContainer">
+            <button style="background-color: darkslategray; color: aliceblue;" onclick="reset()">Reset</button>
+            <button id="done" class="btn" style="background-color: darkslategray; color: aliceblue;">Done!</button>
+        </div>
+    </div>
+
+    <script type="module" src="dressup.js"></script>
+</body>
+</html>

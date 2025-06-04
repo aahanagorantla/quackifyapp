@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pond</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/x-icon" href="res/logo.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='pond.css'>
+</head>
+<body>
+    <div class = "content">
+        <div class = "left">
+            <button class="backtoprofile" onclick="window.location.href='profile.html'">Back</button>
+            <div class = "userbox">
+                <center>
+                        <p class = "usertitle">Users</p>
+                        <div class="world-header">
+                            <p id="world-name"></p>
+                            <p id="world-code"></p>
+                        </div>
+                        <ul id="userlist"></ul>
+                </center>
+            </div>
+        </div>
+
+        <div class="postbox">
+            <input id = "postinput" type="text" class="postinput" placeholder="Write a post...">
+            <button class = "btn" id="postbutton">Post</button>
+            <br>
+            <div style="margin-left: 60px; margin-top: 10px;">
+                <button id="addtodolist" class="bottom-btn">📝 Add To-Do List</button>
+                <button id="addmood" class="bottom-btn">😊 Add Mood</button>
+                <button id="addhabits" class="bottom-btn">🔁 Add Habits</button>
+            </div>
+            <div id = "output"></div>
+        </div>
+
+    </div>
+
+    <script type = "module" src='pond.js'></script>
+</body>
+</html>
