@@ -92,8 +92,9 @@ async function renderuserlist()
                     li.appendChild(infoDiv);
 
                     if (userEmail != email) 
+                        
                         li.addEventListener("click", () => {
-                            window.location.href = `otherprofile.html?email=${encodeURIComponent(userEmail)}`;
+                            window.location.href = `otherprofile.html?user=${username}`;
                             localStorage.setItem("otherUserEmail", userEmail);
                         });
                     else li.classList.add("current-user");
