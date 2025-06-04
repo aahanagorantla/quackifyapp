@@ -119,7 +119,7 @@ if (docSnap.exists())
 
     const name = docSnap.get("name") || worldname;
     const worldcode = docSnap.get("worldcode") || "NONE";
-    document.getElementById("world-name").textContent = `🌎 World: ${name}`;
+    document.getElementById("world-name").textContent = `🌎 Pond Name: ${name}`;
     document.getElementById("world-code").textContent = `🔑 Code: ${worldcode}`;
 }
 
