@@ -160,6 +160,8 @@ window.nextNecklace = nextNecklace;
 window.prevShoes = prevShoes;
 window.nextShoes = nextShoes;
 window.reset = reset;
+window.doneonclick = doneonclick;
+
 
 document.addEventListener("DOMContentLoaded", async () => {
     await initializeAvatarIndices();
