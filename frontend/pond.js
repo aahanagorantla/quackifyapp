@@ -1,6 +1,8 @@
+const res = await fetch('/firebase-config');
+const firebaseConfig = await res.json();
+
 import { doc, getDoc, getFirestore, setDoc, updateDoc, arrayUnion } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { firebaseConfig } from "./firebase.js";
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
